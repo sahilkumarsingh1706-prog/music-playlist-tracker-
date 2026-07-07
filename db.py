@@ -7,7 +7,7 @@ connection = psycopg2.connect(
     host="localhost",
     database="music_db",
     user="postgres",
-    password="Sahil123",
+    password="Your Password",
     port="5432"
 )
 
