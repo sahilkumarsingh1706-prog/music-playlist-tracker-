@@ -7,7 +7,7 @@ Download PostgreSQL and install it.
 Remember:
 
 - Username: postgres
-- Password: Sahil123
+- Password: Your Password
 - Port: 5432
 
 Verify:
