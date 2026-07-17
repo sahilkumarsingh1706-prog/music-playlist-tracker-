@@ -1,14 +1,20 @@
+import os
 import psycopg2
+from dotenv import load_dotenv
+
+# Load .env file
+load_dotenv()
 
 # =========================
 # Database Connection
 # =========================
 connection = psycopg2.connect(
-    host="localhost",
-    database="music_db",
-    user="postgres",
-    password="Your Password",
-    port="5432"
+    host=os.getenv("DB_HOST"),
+    database=os.getenv("DB_NAME"),
+    user=os.getenv("DB_USER"),
+    password=os.getenv("DB_PASSWORD"),
+    port=os.getenv("DB_PORT"),
+    sslmode="require"
 )
 
 cursor = connection.cursor()
