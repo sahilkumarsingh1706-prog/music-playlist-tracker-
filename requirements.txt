@@ -2,3 +2,9 @@ streamlit
 psycopg2-binary
 pandas
 matplotlib
+
+streamlit
+psycopg2-binary
+pandas
+matplotlib
+python-dotenv
